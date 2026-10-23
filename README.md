@@ -136,3 +136,25 @@ classDiagram
 - JavaScript ES6 Modules.
 - Node.js.
 - Git e GitHub.
+
+
+## 2. Implementação e testes
+
+- Classes organizadas em módulos ES6 na pasta `src/`.
+- `Usuario` definida como classe-base abstrata.
+- `Cliente` e `Tecnico` herdam de `Usuario`.
+- `UsuarioFactory` centraliza a criação dos tipos de usuário.
+- `GerenciadorOS` implementa o padrão Singleton.
+- `OrdemServico` valida os dados obrigatórios e inicia com status `ABERTA`.
+
+### Execução
+
+Para executar o sistema, utilize:
+
+```bash
+npm start
+```
+
+### Resultado validado
+
+O sistema foi executado localmente, criando um cliente, um técnico e uma ordem de serviço. O teste também confirmou que duas instâncias de `GerenciadorOS` referenciam o mesmo objeto.
